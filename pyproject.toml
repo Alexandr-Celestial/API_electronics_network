@@ -8,9 +8,22 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "django (>=5.2.8,<6.0.0)",
+    "psycopg2-binary (>=2.9.11,<3.0.0)",
+    "djangorestframework (>=3.16.1,<4.0.0)",
+    "django-filter (>=25.2,<26.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "redis (>=7.0.1,<8.0.0)",
+    "coverage (>=7.11.3,<8.0.0)",
+    "django-cors-headers (>=4.9.0,<5.0.0)",
+    "pillow (>=12.0.0,<13.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.3.0"
+black = "^25.9.0"
