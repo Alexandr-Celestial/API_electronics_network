@@ -14,6 +14,7 @@ class NetworkLink(models.Model):
     name = models.CharField(max_length=250, verbose_name="название", null=True, blank=True)
     email = models.EmailField(unique=True, null=False, verbose_name="email", help_text="Введите адрес эл. почты")
     country = models.CharField(max_length=100, verbose_name="страна", null=True, blank=True)
+    city = models.CharField(max_length=100, verbose_name="город", null=True, blank=True)
     street = models.CharField(max_length=100, verbose_name="улица", null=True, blank=True)
     house_number = models.CharField(max_length=100, verbose_name="номер дома", null=True, blank=True)
 
